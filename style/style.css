@@ -1,3 +1,5 @@
+/* Global */
+
 * {
     margin: 0;
     padding: 0;
@@ -14,6 +16,8 @@ html {
 ::-webkit-scrollbar {
     width: 0px;
 }
+
+/* Header Section */
 
 header {
     display: flex;
@@ -40,6 +44,17 @@ header>div>ul>li:hover {
     scale: 1.1;
     cursor: pointer;
 }
+
+.no-style {
+    text-decoration: none;
+    color: inherit;
+}
+
+.no-style:hover {
+    text-decoration: underline;
+}
+
+/* Hero Section */
 
 .background-header {
     background-image: url(../assets/asset\ 1.jpeg);
@@ -68,6 +83,91 @@ header>div>ul>li:hover {
     color: #aac644;
 }
 
+.btn-switch {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: #aac644;
+    color: white;
+    font-weight: bolder;
+    border: #aac644;
+    cursor: pointer;
+}
+
+.hero_title {
+    font-family: "Poppins", sans-serif;
+    font-size: 54.88px;
+    line-height: 65.856px
+}
+
+main {
+    background-color: rgb(218, 153, 32);
+    position: relative;
+    padding-top: 70px;
+}
+
+section.background-header {
+    height: 528px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 55%;
+}
+
+.hero-text-container {
+    color: rgb(255, 255, 255);
+    width: 990px;
+    font-weight: bold;
+    position: absolute;
+    top: 30%;
+    left: 15%;
+}
+
+/* Insurance Section */
+
+.insurance-section {
+    display: flex;
+    margin: 75px 160px;
+    justify-content: space-between;
+    background-color: #fffef8;
+}
+
+.insurance_p {
+    font-size: 17px;
+    line-height: 34px;
+    letter-spacing: 0.88px;
+    color: #3f485d;
+}
+
+.head_insurance_title {
+    color: #f8a715;
+    font-weight: 700;
+    font-size: 44.8px;
+    margin: 10px 0px;
+}
+
+.sub_insurance_title {
+    max-width: 415px;
+    font-size: 16px;
+    line-height: 27.2px;
+    letter-spacing: 0.68px;
+    font-weight: 400;
+    color: #3f485d;
+}
+
+.insurance_p>span {
+    padding: 0px 10px
+}
+
+i {
+    color: #aac644;
+}
+
+/* Customer Info Section */
+
 .customer-care {
     display: flex;
     flex-direction: column;
@@ -81,6 +181,15 @@ header>div>ul>li:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.customer-care-text {
+    font-size: 24px;
+    line-height: 31.2px;
+    letter-spacing: 0.68px;
+    font-weight: bold;
+    z-index: 9999;
+    font-family: Poppins;
 }
 
 .hovers {
@@ -98,6 +207,85 @@ header>div>ul>li:hover {
     filter: brightness();
 }
 
+/* About Section */
+
+#about {
+    background-color: #fffef8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.head_about_title {
+    font-family: Poppins;
+    color: #f8a715;
+    font-size: 54.88px;
+    line-height: 65.856px;
+    letter-spacing: 0.68px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about_list {
+    font-size: 16px;
+    line-height: 27.2px;
+    letter-spacing: 0.68px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.about_discussion {
+    font-size: 16px;
+    line-height: 27.2px;
+    letter-spacing: 0.68px;
+    margin-bottom: 30px;
+}
+
+.square_shape {
+    color: #9acd32;
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 12px;
+}
+
+.status_count {
+    text-align: center;
+    width: 100%;
+    text-align: start
+}
+
+.status_count>h2 {
+    color: #f8a715;
+    font-size: 44.8px;
+    margin-bottom: 5px
+}
+
+.status_count>p {
+    color: #61794a;
+    font-size: 16px;
+    font-weight: bold
+}
+
+.about_img {
+    width: 680px;
+    height: 540px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Testimonials Section */
+
+.testimonials-heading {
+    text-align: center;
+    color: #f8a715;
+    font-size: 56px;
+    font-weight: bold;
+    padding: 70px;
+}
+
 .trans {
     display: flex;
     flex-direction: column;
@@ -110,49 +298,29 @@ header>div>ul>li:hover {
     padding: 0px 20px;
 }
 
-input {
-    padding: 5px 20px;
-    border: none;
+/* Contact Us Section */
+
+#content {
+    display: flex;
+    margin: 100px 0;
+    justify-content: center;
+    gap: 50px;
 }
 
-.btn-switch {
-    position: absolute;
-    top: 50%;
-    right: 15px;
-    width: 60px;
-    height: 60px;
-    background-color: #aac644;
-    color: white;
-    font-weight: bolder;
-    border: #aac644;
-    cursor: pointer;
-}
-
-.hero_title {
-    font-family: "Poppins", sans-serif;
-}
-
-.insurance_p {
-    font-size: 17px;
-    line-height: 34px;
-    letter-spacing: 0.88px;
-    color: #3f485d;
-}
-
-.customer-care-text {
-    font-size: 24px;
-    line-height: 31.2px;
-    letter-spacing: 0.68px;
+#content>form>p {
+    color: #f8a715;
     font-weight: bold;
-    z-index: 9999;
-    font-family: Poppins;
+    font-size: 44px
 }
 
-.no-style {
-    text-decoration: none;
-    color: inherit;
-}
+/* Footer Section */
 
-.no-style:hover {
-    text-decoration: underline;
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 18px;
+    background-color: #61794a;
+    padding: 20px;
 }
